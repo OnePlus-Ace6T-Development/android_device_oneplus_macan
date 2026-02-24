@@ -15,7 +15,7 @@ include device/oneplus/sm8850-common/BoardConfigCommon.mk
 DEVICE_PATH := device/oneplus/macan
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OP612DL1
+TARGET_OTA_ASSERT_DEVICE := OP6117L1
 
 # Display
 TARGET_SCREEN_DENSITY := 560

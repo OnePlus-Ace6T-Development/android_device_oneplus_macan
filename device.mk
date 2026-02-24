@@ -17,9 +17,14 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2800
 TARGET_SCREEN_WIDTH := 1272
 
-# Display
+# Display Seems like we are dealing with different screen panels in the same rom dump, let's try to add support for all of them:
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946700822127507.xml
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946700822127507.xml \
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946850534658451.xml \
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946916234099603.xml \
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml
 
 # Keymint
 PRODUCT_PACKAGES += \
@@ -34,29 +39,28 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    FrameworksResEuicc_EU \
-    FrameworksResEuicc_ROW \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
     OPlusWifiResTarget
 
-# Regional properties
+# Regional properties only china
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24877/build.EU.prop:$(TARGET_COPY_OUT_ODM)/etc/24877/build.EU.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24877/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/24877/build.IN.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24877/build.ROW.prop:$(TARGET_COPY_OUT_ODM)/etc/24877/build.ROW.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24877/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/24877/build.default.prop
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24855/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/24855/build.default.prop 
+#    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/***/build.EU.prop:$(TARGET_COPY_OUT_ODM)/etc/***/build.EU.prop \
+#    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/***/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/***/build.IN.prop \
+#    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/***/build.NA.prop:$(TARGET_COPY_OUT_ODM)/etc/***/build.NA.prop \
+#    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/***/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/***/build.default.prop
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Telephony
-PRODUCT_PACKAGES += \
-    OplusEsimSwitcher \
-    OplusEuicc
+#PRODUCT_PACKAGES += \
+#    OplusEsimSwitcher \
+#    OplusEuicc
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml

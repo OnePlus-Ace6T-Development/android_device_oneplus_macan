@@ -1,1 +1,6 @@
-import /odm/etc/${ro.boot.prjname}/build.${ro.boot.hardware.revision}.prop
+# Device info
+
+ro.product.odm.device=OP6117L1
+ro.product.odm.model=PLR110
+ro.product.odm.name=PLR110
+ro.vendor.oplus.regionmark=CN

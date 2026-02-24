@@ -18,14 +18,14 @@ PRODUCT_NAME := lineage_macan
 PRODUCT_DEVICE := macan
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := CPH2767
+PRODUCT_MODEL := PLR110
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="qssi_64-user 16 BP2A.250605.015 1770128312310 release-keys" \
-    BuildFingerprint=OnePlus/CPH2767IN/OP612DL1:16/BP2A.250605.015/B.R4T3.23659f6-10540b-130041:user/release-keys \
-    DeviceName=OP612DL1 \
-    DeviceProduct=CPH2767 \
-    SystemDevice=OP612DL1 \
-    SystemName=CPH2767
+    BuildDesc="qssi_64-user 16 BP2A.250605.015 1767156396771 release-keys" \
+    BuildFingerprint=OnePlus/PLR110/OP6117L1:16/BP2A.250605.015/B.R4T3.3291045-10bdc13-10c7e67:user/release-keys \
+    DeviceName=OP6117L1 \
+    DeviceProduct=PLR110 \
+    SystemDevice=OP6117L1 \
+    SystemName=PLR110
