@@ -1945,9 +1945,9 @@ vendor/firmware/vpu40_2v_v1.mbn
 vendor/firmware/vpu40_2v_v1_unsigned.mbn
 
 # WiFi
-#odm/etc/wifi/wcn7750/bdwlan.b0a
-#odm/etc/wifi/wcn7750/bdwlan.b0e
-#odm/etc/wifi/wcn7750/bdwlan.b0i
+odm/etc/wifi/wcn7750/bdwlan.b0a
+odm/etc/wifi/wcn7750/bdwlan.b0e
+odm/etc/wifi/wcn7750/bdwlan.b0i
 odm/etc/wifi/wcn7750/bdwlan.elf
 odm/etc/wifi/wcn7750/regdb.bin
 odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
